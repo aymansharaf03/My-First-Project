@@ -14,7 +14,7 @@ int main(){
 }
 
 void CE2(){
-
+    cout << "hi";
 }
 
 void CE1(){
