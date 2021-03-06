@@ -10,11 +10,26 @@ void CE1();
 int main(){
 
     CE2();
-
 }
 
 void CE2(){
-    cout << "hi";
+    int sizeOfArray;
+    cin >> sizeOfArray;
+    vector<int> integers(sizeOfArray);
+
+    for (int i=0; i<integers.size(); i++){
+        int x;
+        cin >> x;
+        integers[i]= x;
+    }
+
+    int max = numeric_limits<int>::min();
+    for (int i=0; i<integers.size(); i++){
+        if (integers[i]>max){
+            max = integers[i];
+        }
+    }
+    cout << max;
 }
 
 void CE1(){
