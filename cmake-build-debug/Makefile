@@ -67,10 +67,10 @@ RM = D:\C++\apps\CLion\ch-0\203.7148.70\bin\cmake\win\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Ayman\Desktop\My-First-Project
+CMAKE_SOURCE_DIR = D:\My-First-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Ayman\Desktop\My-First-Project\cmake-build-debug
+CMAKE_BINARY_DIR = D:\My-First-Project\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ayman\Desktop\My-First-Project\cmake-build-debug\CMakeFiles C:\Users\Ayman\Desktop\My-First-Project\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\My-First-Project\cmake-build-debug\CMakeFiles D:\My-First-Project\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ayman\Desktop\My-First-Project\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\My-First-Project\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,33 @@ Aymans_First_Project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aymans_First_Project.dir\build.make CMakeFiles/Aymans_First_Project.dir/build
 .PHONY : Aymans_First_Project/fast
 
+Pratice.obj: Pratice.cpp.obj
+
+.PHONY : Pratice.obj
+
+# target to build an object file
+Pratice.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aymans_First_Project.dir\build.make CMakeFiles/Aymans_First_Project.dir/Pratice.cpp.obj
+.PHONY : Pratice.cpp.obj
+
+Pratice.i: Pratice.cpp.i
+
+.PHONY : Pratice.i
+
+# target to preprocess a source file
+Pratice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aymans_First_Project.dir\build.make CMakeFiles/Aymans_First_Project.dir/Pratice.cpp.i
+.PHONY : Pratice.cpp.i
+
+Pratice.s: Pratice.cpp.s
+
+.PHONY : Pratice.s
+
+# target to generate assembly for a file
+Pratice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aymans_First_Project.dir\build.make CMakeFiles/Aymans_First_Project.dir/Pratice.cpp.s
+.PHONY : Pratice.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -178,6 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Aymans_First_Project
+	@echo ... Pratice.obj
+	@echo ... Pratice.i
+	@echo ... Pratice.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

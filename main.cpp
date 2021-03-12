@@ -1,48 +1,37 @@
 #include <iostream>
-
+#include <algorithm>
 #include <vector>
+#include "Practice.cpp"
 
 using namespace std;
 
-void CE2();
-void CE1();
+void homework();
 
 int main(){
 
-    CE2();
+    homework();
+
+    return 0;
 }
 
-void CE2(){
-    int sizeOfArray;
-    cin >> sizeOfArray;
-    vector<int> integers(sizeOfArray);
-
-    for (int i=0; i<integers.size(); i++){
-        int x;
-        cin >> x;
-        integers[i]= x;
+void homework() {
+    int size;
+    cin>>size;
+    vector <string> list(size);
+    for (int i=0; i< list.size(); i++ ){
+        cin>>list[i];
     }
+    for (int i=0; i< list.size(); i++ ){
 
-    int max = numeric_limits<int>::min();
-    for (int i=0; i<integers.size(); i++){
-        if (integers[i]>max){
-            max = integers[i];
+        string word = list[i];
+
+        if (word.size()>10){
+            cout << word[0] << word.size() - 2 << word[word.size()-1] << endl;
+        }
+        else {
+            cout << word << endl;
         }
     }
-    cout << max;
 }
 
-void CE1(){
-    int n;
-    cin>>n;
-    vector<int> numbers(n);
 
-    for(int i=0; i<numbers.size() ;i++){
-        int x;
-        cin>>x;
-        numbers[i]= x;
-    }
-    for (int i=(numbers.size())-1; i>=0; i-- ) {
-        cout<< numbers[i] << " ";
-    }
-}
